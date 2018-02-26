@@ -3,16 +3,11 @@ img {
 }
 
 .site-header {
+    display: flow-root;
     width: 100%;
     background-color: #ffe9ad;
     font-size: 1.2em;
     position: relative;
-}
-
-.site-header:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .site-header a, .site-header a:visited{
