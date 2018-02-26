@@ -30,6 +30,25 @@ img {
     padding-top: 15px;
 }
 
+.main-nav ul{
+    display: none;
+}
+
+#toggle {
+    position: absolute;
+    visibility: hidden;
+}
+
+.icon-menu > label{
+    cursor: pointer;
+    display: block;
+    position: relative;
+
+    top: -40px;
+    left: 3px;
+    width: 40px;
+    height: 30px;
+}
 .site-header li{
     list-style-type: none;
     padding: 10px 5px;
@@ -57,3 +76,19 @@ img {
     font-weight: bold;
 }
 
+@media screen and (min-width: 640px) {
+    .icon-menu {
+        display:none;
+    }
+
+    .main-nav ul {
+        display: block;
+        padding-left: 1em;
+    }
+
+    .main-nav li {
+        border: none;
+        display: inline;
+        padding: 0 1em;
+    }
+}
