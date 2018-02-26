@@ -9,7 +9,3 @@ body {
 .pull-left {
     float:left;
 }
-
-.byline address {
-    display: inline;
-}
