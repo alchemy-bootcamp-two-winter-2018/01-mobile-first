@@ -10,17 +10,13 @@
   
 }
 
-.icon-menu {
+/* .icon-menu {
     position: fixed;
     top: 5px;
     right: 5px;
     font-size: 300%
-}
+} */
 
-.icon-menu:hover .dropDown {
-    position: fixed;
-    display: inline;
-}
 
 /* .icon-menu:hover heading-group-h1::after {
     content: '.icon-menu';
@@ -32,5 +28,16 @@
 
 .dropDown {
     display: none;
+    
+}
 
+.icon-menu::before {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    font-size: 300%
+}
+
+.icon-menu:hover .dropDown {
+    display: block;
 }
