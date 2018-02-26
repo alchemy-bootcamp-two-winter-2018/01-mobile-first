@@ -11,18 +11,18 @@
   <link rel="stylesheet" href="styles/vendor/styles/normalize.css">
 
   <!-- TODOne: Link in the provided styles/icons.css file so that you can use icon fonts -->
-  <link rel="icon" type="image/x-icon" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/icons.css">
   
   <!-- TODOne: Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
-  <link rel="stylesheet" type="css" href="styles/vendor/styles/base.css">
-  <link rel="stylesheet" type="css" href="styles/vendor/styles/layout.css">
-  <link rel="stylesheet" type="css" href="styles/vendor/styles/modules.css">
-  <link rel="stylesheet" type="css" href="styles/vendor/styles/state.css">
-  <link rel="stylesheet" type="css" href="styles/vendor/styles/theme.css">
+  <link rel="stylesheet" type="text/css" href="styles/base.css">
+  <link rel="stylesheet" type="text/css" href="styles/layout.css">
+  <link rel="stylesheet" type="text/css" href="styles/modules.css">
+  <link rel="stylesheet" type="text/css" href="styles/state.css">
+  <link rel="stylesheet" type="text/css" href="styles/theme.css">
   
   <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
   <!-- PUT YOUR RESPONSE HERE -->
-  <!--  -->
+  <!-- Files entered lower in the HTML are given priority, so you order the files by specificity; the more specific, the higher the priority -->
 
   <!-- REVIEW: This is the favicon -->
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/alchemycodelab/code-301-prework/master/acl-logo.PNG?s=100">
@@ -30,6 +30,7 @@
 <body>
   <header class="site-header">
     <section class="heading-group-h1">
+      <span class="icon-menu float-right"></span>
       <h1>
         Kilovolt Blog!
       </h1>
@@ -38,8 +39,10 @@
     <nav class="main-nav">
       <!-- TODO: Add a hamburger menu icon here, which will ultimately show/hide depending on screen width (desktop vs. mobile). -->
 
+
       <ul>
-        <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
+        <li class="tab" data-content="articles"><a href="#" class="icon-home"></span>
+          Home</a></li>
         <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
         <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
         <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
