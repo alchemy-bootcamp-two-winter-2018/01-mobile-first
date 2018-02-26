@@ -2,6 +2,16 @@
     display: inline;
 }
 
+a {
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.byline{
+color: grey;
+}
+
 .pull-right{
     float: right;
 }
@@ -18,8 +28,13 @@ img{
 position: absolute;
 right: 20px;
 top: 20px;
+font-size: 50px;
 }
 
 ul li {
     display: none;
+}
+
+.blog-post header{
+padding: 0;
 }
