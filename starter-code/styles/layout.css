@@ -1,0 +1,9 @@
+.icon-menu {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding-top: 0.2em;
+    padding-right: 0.1em;
+}

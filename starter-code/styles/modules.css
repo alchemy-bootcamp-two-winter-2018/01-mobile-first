@@ -1,1 +1,8 @@
+nav ul {
+    display: none;
+}
 
+
+.icon-menu:active {
+    display: block;
+}
