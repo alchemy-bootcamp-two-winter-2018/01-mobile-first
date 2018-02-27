@@ -39,15 +39,11 @@ a {
     color: grey;
 }
 
-li {
+.dropDown li {
     font-size: 150%;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.divider {
-    width: 96%;
-    border-bottom: solid 1pt grey;
+    border-bottom: solid 1px grey;
 }
 
 .heading-group-h1 {
@@ -56,7 +52,7 @@ li {
 
 @media screen and (min-width: 640px) {
     .dropDown {
-        display: inline;
+        display: block;
         list-style-type: none;
         color: grey;
         margin: 0;
@@ -64,20 +60,16 @@ li {
     .dropDown li {
         display: inline;
     }
-
+    .main-nav {
+        height: fit-content;
+    }
     .dropDown a {
-        display: block;
+        float: left;
         text-align: center;
         padding-left: 20px;
         padding-right: 16px;
     }
-
     .icon-menu::before {
         display: none;
     }
-    .divider {
-        border-bottom: none;
-    }
-    
-
 }
