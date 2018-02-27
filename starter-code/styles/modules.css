@@ -31,9 +31,30 @@ top: 20px;
 font-size: 50px;
 }
 
+input {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+}
+
 ul li {
     display: none;
 }
+
+.main-nav input:checked  ~ ul li {
+    display: block;
+}
+
 
 .blog-post header{
 padding: 0;
