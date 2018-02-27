@@ -56,28 +56,26 @@ li {
 
 @media screen and (min-width: 640px) {
     .dropDown {
-        display: inline;
+        display: block;
         list-style-type: none;
         color: grey;
         margin: 0;
     }
+    
     .dropDown li {
         display: inline;
     }
-
+    .main-nav {
+        height: fit-content;
+    }
     .dropDown a {
-        display: block;
+        float: left;
         text-align: center;
         padding-left: 20px;
         padding-right: 16px;
     }
-
+    
     .icon-menu::before {
         display: none;
     }
-    .divider {
-        border-bottom: none;
-    }
-    
-
 }
