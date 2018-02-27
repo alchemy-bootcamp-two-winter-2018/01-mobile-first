@@ -30,11 +30,7 @@ address a{
     display: block;
 }
 
-@media screen and (min-width: 900px){
-    img {
-        max-width: 50%;
-        max-height: 50%;
-    }
+@media screen and (min-width: 640px){
     .article-body{
         display: inline-block;
     }
@@ -48,6 +44,12 @@ address a{
         display: inline;
         border-bottom: none;
         padding-left: 1em;
+    }
+    .pull-right{
+        float: right;
+    }
+    .pull-left{
+        float: left;
     }
 
 }
