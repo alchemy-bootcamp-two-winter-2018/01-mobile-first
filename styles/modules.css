@@ -10,7 +10,18 @@
   
 }
 
-.icon-menu {
+.byline {
+    color: grey;
+}
+
+.dropDown {
+    display: none;
+    list-style-type: none;
+    color: grey;
+    text-indent: -40px;
+}
+
+.icon-menu::before {
     position: fixed;
     top: 5px;
     right: 5px;
@@ -18,19 +29,22 @@
 }
 
 .icon-menu:hover .dropDown {
-    position: fixed;
-    display: inline;
+    display: block;
 }
 
-/* .icon-menu:hover heading-group-h1::after {
-    content: '.icon-menu';
-} */
-
-.byline {
+a {
+    text-decoration: none;
     color: grey;
 }
 
-.dropDown {
-    display: none;
+li {
+    /* border-bottom: solid 1px grey; */
+    font-size: 150%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.divider {
+    width: 96%;
+    border-bottom: solid 1pt grey;
 }
