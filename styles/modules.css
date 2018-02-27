@@ -10,25 +10,15 @@
   
 }
 
-/* .icon-menu {
-    position: fixed;
-    top: 5px;
-    right: 5px;
-    font-size: 300%
-} */
-
-
-/* .icon-menu:hover heading-group-h1::after {
-    content: '.icon-menu';
-} */
-
 .byline {
     color: grey;
 }
 
 .dropDown {
     display: none;
-    
+    list-style-type: none;
+    color: grey;
+    text-indent: -40px;
 }
 
 .icon-menu::before {
@@ -40,4 +30,21 @@
 
 .icon-menu:hover .dropDown {
     display: block;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+li {
+    /* border-bottom: solid 1px grey; */
+    font-size: 150%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.divider {
+    width: 96%;
+    border-bottom: solid 1pt grey;
 }
