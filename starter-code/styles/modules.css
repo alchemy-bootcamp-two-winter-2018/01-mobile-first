@@ -83,3 +83,9 @@ padding: 0;
         padding: 0px 10px;
     }
 }
+
+@media screen and (max-width: 800px) {
+    ul {
+        width: 100%;
+    }
+}
