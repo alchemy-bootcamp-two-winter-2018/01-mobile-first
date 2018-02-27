@@ -14,10 +14,12 @@ a {
 
 .pull-right{
     float: right;
+    margin: 10px 0px 10px 10px;
 }
 
 .pull-left {
     float: left;
+    margin: 10px 10px 10px 0px;
 }
 
 img {
