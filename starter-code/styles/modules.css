@@ -1,9 +1,32 @@
 nav ul {
     display: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+#menu li a{
+    text-decoration: none;
+    color: grey;
+}
+#menu li{
+    font-size: 1.5em;
+    border-bottom: 1px solid grey;
+    padding-bottom: .4em;
+    padding-top: .4em;
 }
 
+.byline {
+    color: grey;
+}
+.byline address{
+    display: inline;
 
-.icon-menu:active {
-    
+}
+address a{
+    text-decoration: none;
+    color: grey;
+}
+
+.icon-menu:hover + #menu {
+    display: block;
 }
 
