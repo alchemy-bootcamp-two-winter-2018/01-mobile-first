@@ -30,3 +30,25 @@ address a{
     display: block;
 }
 
+@media screen and (min-width: 900px){
+    img {
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .article-body{
+        display: inline-block;
+    }
+    .icon-menu{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    #menu li{
+        display: inline;
+        border-bottom: none;
+        padding-left: 1em;
+    }
+
+}
+
