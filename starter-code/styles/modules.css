@@ -8,27 +8,27 @@ a {
     text-decoration: none;
 }
 
-.byline{
-color: grey;
+.byline {
+    color: grey;
 }
 
 .pull-right{
     float: right;
 }
 
-.pull-left{
+.pull-left {
     float: left;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
 .icon-menu {
-position: absolute;
-right: 20px;
-top: 20px;
-font-size: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 50px;
 }
 
 input {
@@ -70,4 +70,14 @@ ul li {
 
 .blog-post header{
 padding: 0;
+}
+
+@media screen and (min-width: 640px) {
+    .icon-menu, input {
+        display: none;
+    }
+    ul li {
+        display: inline;
+        padding: 0px 10px;
+    }
 }
