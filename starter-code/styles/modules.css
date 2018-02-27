@@ -47,12 +47,24 @@ input {
     -webkit-touch-callout: none;
 }
 
+ul {
+    width: 100%;
+    padding-left: 0px;
+}
+
 ul li {
     display: none;
+    position: relative;
+    right: 0;
+    left: 0;
+    padding: 20px 0px;
+    font-size: 140%;
 }
 
 .main-nav input:checked  ~ ul li {
     display: block;
+    width: 100%;
+    border-bottom: 1px solid gray;
 }
 
 
