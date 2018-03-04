@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-wdith, initial-scale=1">
   <title>Lab 1</title>
-  <!-- TODO: Add a meta tag to properly set the viewport and initial scale -->
+  <!-- TODO: Add a meta tag to properly set the viewport and initial scale NE-->
 
-  <!-- TODO: Add a link to a normalize.css file, which should be in your vendor/styles/ directory -->
+  <!-- TODO: Add a link to a normalize.css file, which should be in your vendor/styles/ directory NE-->
 
-  <!-- TODO: Link in the provided styles/icons.css file so that you can use icon fonts -->
+  <!-- TODO: Link in the provided styles/icons.css file so that you can use icon fonts NE-->
   
-  <!-- TODO: Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
+  <!-- TODO: Link in your SMACSS-appropriate CSS files: base, layout, and modules NE-->
   
   <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
-  <!-- PUT YOUR RESPONSE HERE -->
+  <!-- Ordering from least specific to most specific allows the base css and etc to refer to the stylesheet beforehand in order to know what to change --> 
 
   <!-- REVIEW: This is the favicon -->
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/alchemycodelab/code-301-prework/master/acl-logo.PNG?s=100">
+  <link rel="stylesheet" href="vender/styles/normalize.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
 </head>
 <body>
   <header class="site-header">
@@ -26,7 +32,9 @@
       <h2>The shocking power of static pages</h2>
     </section>
     <nav class="main-nav">
-      <!-- TODO: Add a hamburger menu icon here, which will ultimately show/hide depending on screen width (desktop vs. mobile). -->
+      <!-- TODO: Add a hamburger menu icon here, which will ultimately show/hide depending on screen width (desktop vs. mobile). NE -->
+      <span class="icon-menu"></span>
+      <input type="checkbox" />
 
       <ul>
         <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
@@ -41,7 +49,7 @@
       <!-- REVIEW: Note that the articles have multiple classes. This is a perfectly normal thing in HTML/CSS, even though we have not seen it very much so far. -->
       <article class="blog-post clearfix" data-category="bacon">
       <!-- COMMENT: Read the CSS Tricks article on clearfix, and explain in your own words why and how they are used. Article: https://css-tricks.com/snippets/css/clear-fix/ -->
-      <!-- PUT YOUR RESPONSE HERE -->
+      <!-- Clearfix was used back in the day to postion elements around another element with the position of float. -->
           <header>
             <h1>Bacon Ipsum</h1>
             <!-- REVIEW: Look closely at the HTML structure of this "byline" div, as it will affect how you choose to target these elements in CSS. -->
